@@ -1,0 +1,362 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    min-height: 18vh;
+    width: 100%;
+    background-image:radial-gradient(rgba(0, 0, 0, 0),rgba(99, 98, 98, 0)),url("assets/background_nav.PNG");
+    background-size: center;
+    cursor: pointer;
+    position: sticky;
+    top: 0;
+}
+
+nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    
+}
+
+.left-nav{
+    display: flex;
+    width: 40%;
+    color: white;
+}
+
+.left-nav h1{
+    padding-top: 2%;
+    font-size:170%;
+}
+
+.logo{
+    justify-content: center;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.logo img{
+    width:70px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-top: 8%;
+}
+
+.right-nav{
+    flex: 1;
+    text-align: right;
+    display: inline-block;
+}
+
+.right-nav ul{
+    list-style: none;
+    display: flex;
+    font-size: 140%;
+}
+.right-nav li{
+    padding: 20px;
+}
+
+.right-nav a{
+    text-decoration: none;
+    color: white;
+}
+
+.right-nav li a:hover {
+    color: rgb(130, 129, 129);
+    text-decoration: underline;
+}
+
+/*.box-main{
+    display: flex;
+    max-width: 100%;
+    
+    
+}
+
+.body{
+    padding-top: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.firsthalf{
+    width: 50%;
+}
+
+.secondhalf{
+    width: 50%;
+    display: grid;
+	place-items: center;
+    flex-direction: row-reverse;
+}
+
+*/
+.text-big {
+    font-weight: bold;
+    font-size:40px;
+}
+
+.text-small{
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+
+.box-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.section {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 100%;
+    padding: 40px 0 40px 0;
+}
+
+.left .box-main {
+    flex-direction: row-reverse;
+}
+
+.firsthalf{
+    width: 50%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15px;
+    margin-top: 0%;
+    justify-content: left;
+    padding-right: 100px;
+}
+.secondhalf{
+    width: 70%;
+    display: grid;
+	place-items: center;
+    height: 390px;
+}
+
+.secondhalf img{
+    width: 80%;
+    border: 4px;
+    border-radius: 28px;
+    margin-top: 5px;
+}
+
+main{
+    width: 60%;
+    height: 500px;
+    box-shadow: 0px 0px 3px gray;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+main img{
+    width: 795px;
+    height: 500px;
+}
+
+.slide{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 1s;
+}
+
+.buttons{
+    text-align: center;
+    
+}
+
+.quote{
+    display: flex;
+    height: 35vh;
+    justify-content: center;
+}
+
+.founder{
+    align-items: center;
+    padding-right: 35px;
+}
+.founder img{
+    width: 150px;
+    border: 5px solid black;
+    border-radius: 250px;
+
+}
+
+.founderquote{
+    padding-left: 35px;
+}
+
+.founderquote img{
+    width: 300px;
+}
+
+.contact-heading{
+    font-weight: bold;
+    font-size:40px;
+    font-family: 'Ubuntu Mono', monospace;
+    text-align: center;
+}
+
+.para {
+    padding-top: 1%;
+    font-size:30px;
+    font-family: 'Ubuntu Mono', monospace;
+    text-align: center
+}
+
+.icons {
+    width: 100%;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+}
+
+.icons ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.icons li img {
+    width: 100px;
+    padding: 100px;
+}
+
+.text{
+    width: 100%;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+}
+
+.text ul {
+    width: 50%;
+    display: flex;
+    list-style: none;
+    margin: 0 0 20px 0;
+    padding: 0;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 20px;
+    justify-content: center;
+}
+
+.text ul li{
+    width: 100%;
+    text-align: center;
+}
+
+.text ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.footer{
+    height: 40vh;
+    width: 100%;
+}
+
+.footer-background{
+    background: rgba(0,0,0,0) url('assets/background_nav.PNG');
+    background-size:cover;
+    background-blend-mode: darken;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+}
+
+.title{
+    width: 50%;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.follow{
+    width: 30%;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.follow p {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+.follow ul{
+    width: 30%;
+    list-style: none;
+    display: flex;
+    padding: 20px;
+}
+
+.follow ul li{
+    text-align: center;
+}
+
+.follow ul li img{
+    width: 50px;
+    border: 4px solid black;
+    border-radius: 10px;
+    margin: 0 20px 0 20px;
+}
+
+.copyright {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.filmfestival{
+    height: 90vh;
+}
+
+.infmfftitle{
+    font-size: 40px;
+    padding-left: 11%;
+    padding-top: 5%;
+    padding-bottom: 2%;
+}
+
+.infmffbody{
+    padding: 5%;
+    font-size: 20px;
+}
+
+.aboutbody{
+    max-width: 100%;
+}
+
+.aboutbody p{
+    font-size: 40px;
+    padding-left: 40%;
+    padding-top : 4%;
+    padding-bottom: 4%;
+}
+
+.abouttext{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 50px;
+    font-size: 20px;
+}
