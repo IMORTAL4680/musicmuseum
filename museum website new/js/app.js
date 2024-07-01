@@ -1,4 +1,4 @@
-const slides= document.querySelectorAll(".slide")
+const slides= document.querySelectorAll(".slides img")
 var counter =0;
 
 slides.forEach(
@@ -17,7 +17,7 @@ const goPrev = () => {
     }
 }
 
-const goNext = () => {
+const goNext = () => {dhbbeehthhrhethhh
     if (counter == slides.length - 1) {
         counter = 0;
         slideImage();
